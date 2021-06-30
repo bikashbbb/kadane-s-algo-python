@@ -1,0 +1,11 @@
+def manSubArraySum(a):
+    currentbest = 0
+    overallbest = a[0]
+    for p in a: 
+        currentbest = currentbest+p 
+        if currentbest> overallbest:
+            overallbest = currentbest
+        if currentbest<0: # nottrue
+            currentbest =0 # 0
+
+    return overallbest
